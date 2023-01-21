@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "uberdoodle",
+    name: "bekditlevsen",
     platforms: [.macOS(.v12)],
     products: [
         .executable(name: "uberdoodle", targets: ["uberdoodle"])
