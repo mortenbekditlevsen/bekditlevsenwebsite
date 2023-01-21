@@ -60,17 +60,17 @@ public extension Node where Context == HTML.DocumentContext {
     }
 }
 
-extension Theme where Site == Uberdoodle {
-    static var uberdoodle: Self {
+extension Theme where Site == BekDitlevsen {
+    static var bekditlevsen: Self {
         Theme(
-            htmlFactory: UberdoodleHTMLFactory()
+            htmlFactory: BekDitlevsenHTMLFactory()
         )
     }
 
     
-    private struct UberdoodleHTMLFactory: HTMLFactory {
+    private struct BekDitlevsenHTMLFactory: HTMLFactory {
         func makeIndexHTML(for index: Index,
-                           context: PublishingContext<Uberdoodle>) throws -> HTML {
+                           context: PublishingContext<BekDitlevsen>) throws -> HTML {
             HTML(
                 .lang(context.site.language),
                 .head2(for: index, on: context.site),
@@ -95,8 +95,8 @@ extension Theme where Site == Uberdoodle {
             )
         }
 
-        func makeSectionHTML(for section: Section<Uberdoodle>,
-                             context: PublishingContext<Uberdoodle>) throws -> HTML {
+        func makeSectionHTML(for section: Section<BekDitlevsen>,
+                             context: PublishingContext<BekDitlevsen>) throws -> HTML {
             HTML(
                 .lang(context.site.language),
                 .head2(for: section, on: context.site),
@@ -111,8 +111,8 @@ extension Theme where Site == Uberdoodle {
             )
         }
 
-        func makeItemHTML(for item: Item<Uberdoodle>,
-                          context: PublishingContext<Uberdoodle>) throws -> HTML {
+        func makeItemHTML(for item: Item<BekDitlevsen>,
+                          context: PublishingContext<BekDitlevsen>) throws -> HTML {
             HTML(
                 .lang(context.site.language),
                 .head2(for: item, on: context.site),

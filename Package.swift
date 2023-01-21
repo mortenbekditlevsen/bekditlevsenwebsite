@@ -6,7 +6,7 @@ let package = Package(
     name: "bekditlevsen",
     platforms: [.macOS(.v12)],
     products: [
-        .executable(name: "uberdoodle", targets: ["uberdoodle"])
+        .executable(name: "bekditlevsen", targets: ["bekditlevsen"])
     ],
     dependencies: [
         .package(url: "https://github.com/johnsundell/shellout.git", from: "2.3.0"),
@@ -15,7 +15,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "uberdoodle",
+            name: "bekditlevsen",
             dependencies: [
                 .product(name: "Publish", package: "publish"),
                 .product(name: "SplashPublishPlugin", package: "splashpublishplugin"),

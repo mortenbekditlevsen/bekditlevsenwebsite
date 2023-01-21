@@ -4,7 +4,7 @@ import Plot
 import SplashPublishPlugin
 
 // This type acts as the configuration for your website.
-struct Uberdoodle: Website {
+struct BekDitlevsen: Website {
     enum SectionID: String, WebsiteSectionID {
         // Add the sections that you want your website to contain here:
         case swiftEvolution = "swift-evolution"
@@ -18,26 +18,17 @@ struct Uberdoodle: Website {
     // Update these properties to configure your website:
     var url = URL(string: "https://bekditlevsen.dk")!
     var name = "bekditlevsen.dk"
-    var description = "A spirograph drawing tool for iPad and iPhone"
+    var description = "Blog about Swift and Firebase"
     var language: Language { .english }
     var imagePath: Path? { "Resources/appclip2.jpg" }
 }
 
 // This will generate your website using the built-in Foundation theme:
-try Uberdoodle()
-    .publish(withTheme: .uberdoodle,
+try BekDitlevsen()
+    .publish(withTheme: .bekditlevsen,
              deployedUsing: .firebaseHosting("bekditlevsen"),
              additionalSteps: [
                 .copyResources(at: "Resources/.well-known", to: ".well-known", includingFolder: false),
-//                .addItem(Item(
-//                    path: "my-favorite-recipe",
-//                    sectionID: .posts,
-//                    metadata: Uberdoodle.ItemMetadata(),
-//                    tags: ["favorite", "featured"],
-//                    content: Content(
-//                        title: "Check out my favorite recipe!"
-//                    )
-//                )),
              ],
              plugins: [.splash(withClassPrefix: "mojo-")])
 
