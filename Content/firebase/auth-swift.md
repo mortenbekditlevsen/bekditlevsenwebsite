@@ -6,7 +6,7 @@ tags: Firebase
 
 # Firebase Auth in Swift
 
-Work on porting Firebase Auth to Swift has been initiated by [Paul Beusterien](https://github.com/paulb777) who works on the Firebase Apple SDKs!
+Work on porting Firebase Auth to Swift has been initiated by [Paul Beusterien](https://github.com/paulb777) who works for Google on the Firebase Apple SDKs!
 
 This is great news for Swift, since this will eventually enable some use cases for Firebase in Swift that were previously unavailable - like potentially being able to use Firebase in Swift on non-Darwin platforms.
 

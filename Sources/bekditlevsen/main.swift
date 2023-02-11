@@ -9,6 +9,7 @@ struct BekDitlevsen: Website {
         // Add the sections that you want your website to contain here:
         case swiftEvolution = "swift-evolution"
         case firebase
+        case bookReviews = "book-reviews"
     }
 
     struct ItemMetadata: WebsiteItemMetadata {

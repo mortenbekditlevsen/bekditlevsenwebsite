@@ -67,7 +67,6 @@ extension Theme where Site == BekDitlevsen {
         )
     }
 
-    
     private struct BekDitlevsenHTMLFactory: HTMLFactory {
         func makeIndexHTML(for index: Index,
                            context: PublishingContext<BekDitlevsen>) throws -> HTML {
